@@ -36,13 +36,12 @@ Lauch Ubuntu Software and install Guake Terminal - then everything is an f12 awa
 
 ### Machine Learning Setup
 
-SETUP --
 sudo apt-get update
 
 sudo apt-get upgrade
 
 ### swag
-sudo apt-get install -y build-essential cmake gfortran git pkg-config 
+sudo apt-get install -y build-essential cmake gfortran git pkg-config  
 
 sudo apt-get install -y python-dev software-properties-common wget vim
 
@@ -59,9 +58,9 @@ sudo apt-get update
 
 sudo apt-get install cuda
 
-test it
+## reboot since a new driver might be installed then test it
 
-nvidia-smi
+nvidia-smi 
 
 ## cuDNN
 https://developer.nvidia.com/rdp/cudnn-download - have to join NVIDIA dev program. It's free and if you're actually reading this, you're registered. Or not. 
@@ -76,3 +75,18 @@ echo 'export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/
 echo 'export CUDA_HOME=/usr/local/cuda' >> ~/.bashrc
 echo 'export PATH="/usr/local/cuda/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
+
+
+## framework dependencies
+sudo apt-get update
+
+sudo apt-get install -y libprotobuf-dev libleveldb-dev libsnappy-dev libhdf5-serial-dev protobuf-compiler libopencv-dev
+
+### install python 2 and 3 along with other important packages like boost, lmdb, glog, blas, ass and gas.
+
+sudo apt-get install -y --no-install-recommends libboost-all-dev doxygen
+sudo apt-get install -y libgflags-dev libgoogle-glog-dev liblmdb-dev libblas-dev 
+sudo apt-get install -y libatlas-base-dev libopenblas-dev libgphoto2-dev libeigen3-dev libhdf5-dev 
+
+sudo apt-get install -y python-dev python-pip python-nose python-numpy python-scipy
+sudo apt-get install -y python3-dev python3-pip python3-nose python3-numpy python3-scipy
