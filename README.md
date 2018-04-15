@@ -34,14 +34,13 @@ $ sudo apt-get install python2.7-dev python3-dev
 $ sudo apt-get install linux-image-generic linux-image-extra-virtual  
 $ sudo apt-get install linux-source linux-headers-generic  
 
-## Step #2 CUDA 8: Install CUDA Toolkit - READ EVERYTHING!!!
-THESE were instructions I found here https://www.pyimagesearch.com/2017/09/27/setting-up-ubuntu-16-04-cuda-gpu-for-deep-learning-with-python/ - However, it shit the bed on me. So, if you would rather, follow the ALT Step 2. This works
+## Step #2 CUDA 8: CUDA Toolkit - Use ALT Step #2  
+This instruction set is from here https://www.pyimagesearch.com/2017/09/27/setting-up-ubuntu-16-04-cuda-gpu-for-deep-learning-with-python/ - However, it's a tedious way to do this. It works, but not nesecary for CUDA 9.1. However, they are well thought out instructions and worth a read. Plus, there is something to be said about doing something the hard way and then doing it right. 
 
-pay close attention to to detail for this one or you may throw your machine out the window :) 
+Please pay close attention to to detail for this one or you may throw your machine out the window :) 
 
 First disable the Nouveau kernel driver by creating a new file:  
 $ sudo nano /etc/modprobe.d/blacklist-nouveau.conf  
-
 
 Setup the ram file and reboot  
 $ echo options nouveau modeset=0 | sudo tee -a /etc/modprobe.d/nouveau-kms.conf  
@@ -61,7 +60,7 @@ $ chmod +x cuda_8.0.61_375.26_linux-run
 $ mkdir installers  
 $ sudo ./cuda_8.0.61_375.26_linux-run -extract=`pwd`/installers  
 
-##  install the NVIDIA kernel driver:
+###  install the NVIDIA kernel driver:
 $ cd installers
 $ sudo ./NVIDIA-Linux-x86_64-390.48.run
 
