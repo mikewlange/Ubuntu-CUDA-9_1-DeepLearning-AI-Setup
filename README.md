@@ -7,6 +7,6 @@ Ubuntu Deep Learning GPU Setup - CUDA, cuDNN, Python 2, Python 3, TensorFlow, Th
 sudo apt-get update
 sudo apt-get install default-jdk
 
-## NVIDIA Drivers
-
+## NVIDIA Drivers 
+### Cleanhouse
 sudo apt-get purge nvidia*
