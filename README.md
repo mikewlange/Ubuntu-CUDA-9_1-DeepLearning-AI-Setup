@@ -1,7 +1,32 @@
 # Ubuntu-GPU-AI-Setup
-Ubuntu Deep Learning GPU Setup - CUDA, cuDNN, Python 2, Python 3, TensorFlow, Theano, Keras, Pytorch, OpenCV, Dlib and more!
+Ubuntu CUDA Deep Learning GPU Setup - CUDA, cuDNN, Python 2, Python 3, TensorFlow, Theano, Keras, Pytorch, OpenCV, Dlib and more!
 
 
+Assuming you are logged into your machine. You could SSH and copy and paste, but do it this way, typing everyting one, builds character, and two, allowing you to beter reackk what the fuck you're doing
+
+## Step #1: Install Ubuntu system dependencies
+Close all running applications.
+Press ctrl + alt + F1 .
+Login with your username and password.
+Stop X server by executing sudo service lightdm stop .
+Perform the install instructions.
+
+### make sure the machine is uptodate
+sudo apt-get update
+sudo apt-get upgrade
+
+$ sudo apt-get install build-essential cmake git unzip pkg-config
+$ sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
+$ sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+$ sudo apt-get install libxvidcore-dev libx264-dev
+$ sudo apt-get install libgtk-3-dev
+$ sudo apt-get install libhdf5-serial-dev graphviz
+$ sudo apt-get install libopenblas-dev libatlas-base-dev gfortran
+$ sudo apt-get install python-tk python3-tk python-imaging-tk
+
+$ sudo apt-get install python2.7-dev python3-dev
+
+## old ignore!
 ## Java - Just because. Open jdk is fine. 
 
 sudo apt-get update
