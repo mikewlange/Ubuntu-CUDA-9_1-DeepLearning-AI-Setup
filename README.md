@@ -13,6 +13,13 @@ sudo apt-get purge nvidia*
 
 sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt-get update
-sudo apt-get install nvidia-396 (at time of writing for gforce 1080
+sudo apt-get install nvidia-396 
+(at time of writing for gforce 1080)
 
-### reboot
+#### reboot
+
+## Basic shite
+sudo apt install -y chromium-browser
+sudo apt install zsh
+
+### Gotta write code - might as well use Sublime. 
