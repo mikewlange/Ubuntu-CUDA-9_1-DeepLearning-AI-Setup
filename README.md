@@ -8,5 +8,11 @@ sudo apt-get update
 sudo apt-get install default-jdk
 
 ## NVIDIA Drivers 
-### Cleanhouse
+### So you don't stab yourself in the face later
 sudo apt-get purge nvidia*
+
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt-get update
+sudo apt-get install nvidia-396 (at time of writing for gforce 1080
+
+### reboot
