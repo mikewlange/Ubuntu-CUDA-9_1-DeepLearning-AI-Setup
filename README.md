@@ -14,12 +14,12 @@ sudo service lightdm stop
 
 Perform the install instructions.
 
-### make sure the machine is uptodate  
+### Update the machine  
 sudo apt-get update  
 sudo apt-get upgrade  
 
 
-### Prep
+### Pre-requisite 
 $ sudo apt-get install build-essential cmake git unzip pkg-config  
 $ sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev  
 $ sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev  
@@ -30,13 +30,12 @@ $ sudo apt-get install libopenblas-dev libatlas-base-dev gfortran
 $ sudo apt-get install python-tk python3-tk python-imaging-tk  
 $ sudo apt-get install python2.7-dev python3-dev  
 
-### Prepare for Linus Torvalds' distain for nvidia (I'm just guessing)
+### Prepare for Linus' distain for nvidia (I'm just guessing)
 $ sudo apt-get install linux-image-generic linux-image-extra-virtual  
 $ sudo apt-get install linux-source linux-headers-generic  
 
 ## Step #2 CUDA 8: Install CUDA Toolkit - READ EVERYTHING!!!
-
-### THESE were instructions I found here https://www.pyimagesearch.com/2017/09/27/setting-up-ubuntu-16-04-cuda-gpu-for-deep-learning-with-python/ - However, it shit the bed on me. So, if you would rather, follow the ALT Step 2. This works
+THESE were instructions I found here https://www.pyimagesearch.com/2017/09/27/setting-up-ubuntu-16-04-cuda-gpu-for-deep-learning-with-python/ - However, it shit the bed on me. So, if you would rather, follow the ALT Step 2. This works
 
 pay close attention to to detail for this one or you may throw your machine out the window :) 
 
@@ -66,9 +65,7 @@ $ sudo ./cuda_8.0.61_375.26_linux-run -extract=`pwd`/installers
 $ cd installers
 $ sudo ./NVIDIA-Linux-x86_64-390.48.run
 
-## ALT Step #2 - CUDA 9.1 and WORKING!!:
-
-It's working!! Too much to write at this second. brb 
+## ALT Step #2 - CUDA 9.1 and NVIDIA kernel driver:
 
 
 
