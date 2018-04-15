@@ -6,21 +6,17 @@ Assuming you are logged into your machine. You could SSH and copy and paste, but
 
 ## Step #1: Install Ubuntu system dependencies
 
-Close all running applications.
-
-Press ctrl + alt + F1 .
-
-Login with your username and password.
-
-Stop X server by executing sudo service lightdm stop .
+Close all running applications.  
+Press ctrl + alt + F1 .  
+Login with your username and password.  
+Stop X server by executing  
+sudo service lightdm stop
 
 Perform the install instructions.
 
-### make sure the machine is uptodate
-
-sudo apt-get update
-
-sudo apt-get upgrade
+### make sure the machine is uptodate  
+sudo apt-get update  
+sudo apt-get upgrade  
 
 
 ### Prep
@@ -35,9 +31,54 @@ $ sudo apt-get install python-tk python3-tk python-imaging-tk
 $ sudo apt-get install python2.7-dev python3-dev  
 
 ### Prepare for Linus Torvalds' distain for nvidia (I'm just guessing)
-$ sudo apt-get install linux-image-generic linux-image-extra-virtual
+$ sudo apt-get install linux-image-generic linux-image-extra-virtual  
+$ sudo apt-get install linux-source linux-headers-generic  
 
-$ sudo apt-get install linux-source linux-headers-generic
+## Step #2 CUDA 8: Install CUDA Toolkit - READ EVERYTHING!!!
+
+### THESE were instructions I found here https://www.pyimagesearch.com/2017/09/27/setting-up-ubuntu-16-04-cuda-gpu-for-deep-learning-with-python/ - However, it shit the bed on me. So, if you would rather, follow the ALT Step 2. This works
+
+pay close attention to to detail for this one or you may throw your machine out the window :) 
+
+First disable the Nouveau kernel driver by creating a new file:  
+$ sudo nano /etc/modprobe.d/blacklist-nouveau.conf  
+
+
+Setup the ram file and reboot  
+$ echo options nouveau modeset=0 | sudo tee -a /etc/modprobe.d/nouveau-kms.conf  
+$ sudo update-initramfs -u  
+$ sudo reboot  
+
+You will want to download the CUDA Toolkit v8.0 via the NVIDIA CUDA Toolkit website:  
+
+https://developer.nvidia.com/cuda-80-ga2-download-archive  
+
+Once you’re on the download page, select Linux => x86_64 => Ubuntu => 16.04 => runfile (local) .   
+Make sure below is cool - and use wget just becuase  
+$ wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run
+
+### Extract and be patient on the last step
+$ chmod +x cuda_8.0.61_375.26_linux-run  
+$ mkdir installers  
+$ sudo ./cuda_8.0.61_375.26_linux-run -extract=`pwd`/installers  
+
+##  install the NVIDIA kernel driver:
+$ cd installers
+$ sudo ./NVIDIA-Linux-x86_64-390.48.run
+
+## ALT Step #2 - CUDA 9.1 and WORKING!!:
+
+It's working!! Too much to write at this second. brb 
+
+
+
+
+
+
+
+
+
+
 
 
 ## old ignore!
