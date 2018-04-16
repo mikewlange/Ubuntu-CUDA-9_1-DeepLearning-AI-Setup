@@ -1,5 +1,5 @@
 # Ubuntu-GPU-AI-Setup
-Ubuntu CUDA Deep Learning GPU Setup - CUDA, cuDNN, Torch, Python 2, Python 3, TensorFlow, Theano, Keras, Pytorch, OpenCV, Dlib and many specialised tools, frameworks and open source libraries. 
+Ubuntu CUDA Deep Learning GPU Setup - CUDA, cuDNN, Torch, Python 2, Python 3, TensorFlow, Theano, Keras, Pytorch, OpenCV, Dlib, and many specialised tools, frameworks and open source libraries. 
 
 What's the point of posting another deep learning machine setup guide? To be frank, most of the ones I've read suck or are incomplete for a bare metal setup. 
 
@@ -9,16 +9,19 @@ And if you plan to do ML commercially and not use pre-trained models (which you 
 
 This is not building an app or website or even a game, the processing power and time it takes to train commercial grade Nn's is considerable. It's not any more difficult work in any way (much easier actually - thank goodness companies think this is tough stuff - shhh :), it's just process intesive. ya gotta learn the trade offs of when and how to use GpU processor cycles in your devops. 
 
-Build a machine for your Ai dev, trust me. Been at this for 22 years non-stop, built software products in almost every industry, from quantitative finance to gaming to advertising to life saving er physician tools, and everything inbetween, i would not lead you astry on purpose.
+Build a machine for your Ai dev at least once, trust me it's worth the time invested. 
 
 Let's get too it. 
 
 ## Project Goals  
 What are doing?  
-This machine is a general DeepLearning development box thats fits the industry standards for building effective Neural Nets and ML tools and architecture. We want our machine to be our local one stop shop for research and dev of commercial AI in any business sector. It should have the tools to easily classify genetic anomilies, discover new physics with CMS detector data, build HFT systems, design driverless tractors, discover its own use with arbitrary data sets, and forcast the date of and how many pitches will be thrown in the final game when the Cubs take home another world series. 
+This machine is a general DeepLearning development box thats fits the industry standards for building effective Neural Nets and ML tools. We want our machine to be our local one stop shop for research and dev of commercial AI in any business sector. 
 
+It should have the tools to easily classify genetic anomilies, discover new physics with CMS detector data, build HFT systems, design driverless tractors, teach the driver of a tractor new skills, build a web app from a napkin sketch, discover its own use with arbitrary data sets, forcast the date of and how many pitches will be thrown in the final game when the Cubs take home another world series and automate acedemic research via ocr and nlp, and write its own jokes. 
 
+There will working examples of all these things in the comming weeks. The only thing i cant promise is another Cubs workd series.  
 
+## And so it begins
 To install most of the stuff, youll have to stop running lightdm/X SERVER, so you will not have access to web browser. Unless you use a txt  rowser like links2 - which is my favorite - but its a pain. I suggest you you use another puter or print this out. intalling the right Nvidia driver kernal and CUDA combo is a bitch. I've done this 100's of times and every machine/gpu has its own issues. Which is why you'll find this similar set up all over the interwebs but never the same insutruction set. 
 
 
