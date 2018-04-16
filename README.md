@@ -17,7 +17,7 @@ Let's get too it.
 What are doing?  
 This machine is a general DeepLearning development box thats fits the industry standards for building effective Neural Nets and ML tools. We want our machine to be our local one stop shop for research and dev of commercial AI in any business sector. 
 
-It should have the tools to easily classify genetic anomilies, discover new physics with CMS detector data, build HFT systems, design driverless tractors, teach the driver of a tractor new skills, build a web app from a napkin sketch, discover its own use with arbitrary data sets, forcast the date of and how many pitches will be thrown in the final game when the Cubs take home another world series and automate acedemic research via ocr and nlp, and write its own jokes. 
+It should have the tools to easily classify genetic anomilies, discover new physics with CMS detector data, build HFT systems, design driverless tractors, teach the driver of a tractor new skills, build a web app from a napkin sketch, discover its own use with arbitrary data sets, forcast the date of and how many pitches will be thrown in the final game when the Cubs take home another world series, automate acedemic research via ocr and nlp, and write its own jokes and music. 
 
 There will working examples of all these things in the comming weeks. The only thing i cant promise is another Cubs workd series.  
 
