@@ -9,7 +9,7 @@ And if you plan to do ML commercially and not use pre-trained models (which you 
 
 This is not building an app or website or even a game, the processing power and time it takes to train commercial grade Nn's is considerable. It's not any more difficult work in any way (much easier actually - thank goodness companies think this is tough stuff - shhh :), it's just process intesive. ya gotta learn the trade offs of when and how to use GpU processor cycles in your devops. 
 
-Build a machine for your Ai dev at least once, trust me it's worth the time invested. Ask yourself, ever had to manually disabled and blacklisted a Nouveau kernel driver to install software? if not, do this(or similar) before you grab an aws ami and hack away. 
+Build a machine for your Ai dev at least once, trust me it's worth the time invested. Ask yourself, ever had to manually disable and blacklist a Nouveau kernel driver to install software? if not, do this(or similar) before you grab an aws ami and hack away. 
 
 Let's get too it. 
 
